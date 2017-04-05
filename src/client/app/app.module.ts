@@ -6,14 +6,14 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AboutModule } from './about/about.module';
-import { HeaderComponent } from './header/header.component';
+import { TodoComponent } from './todo/todo.component';
 import { HomeModule } from './home/home.module';
 import { SharedModule } from './shared/shared.module';
 
 
 @NgModule({
   imports: [BrowserModule, HttpModule, AppRoutingModule, AboutModule, HomeModule, SharedModule.forRoot()],
-  declarations: [AppComponent, HeaderComponent],
+  declarations: [AppComponent, TodoComponent],
   providers: [{
     provide: APP_BASE_HREF,
     useValue: '<%= APP_BASE %>'
